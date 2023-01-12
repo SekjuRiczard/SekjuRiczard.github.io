@@ -1,0 +1,1 @@
+# SekjuRiczard.github.io
