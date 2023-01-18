@@ -1,0 +1,117 @@
+body {
+    
+	background-color:rgba(83, 63, 33, 0.959);
+	height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+   }
+
+
+
+
+nav
+{
+    background-color:rgb(17, 29, 33);
+    text-align:center;
+}
+
+h1.Logo
+{
+    font-size:44px;
+    color:rgb(181, 227, 212);
+    text-align:center;
+    text-transform:uppercase;  /*zamienia litery na duze*/
+    letter-spacing: 3px; /*rozstrzelenie liter*/
+    
+}
+nav
+{
+
+    text-align:center;
+}
+.Menu
+{
+    list-style-type: none;  /*usuwa te kropki z listy*/  /**/
+    padding: 10px;
+    font-size: 18px;  /*rozmiar czciąki*/
+    min-height: 40px;
+    line-height: 200%;
+    
+}
+.Menu > li
+{
+    display:inline-block; /*uklada elementy w poziomie a li to odniesienie do elementow listy*/
+    padding-left:20px;
+    padding-right:20px;
+    border-right: 1px solid rgba(75, 41, 41, 0.781);  /*seperator elementow w menu nawigacyjnym*/
+    first
+}
+.Menu a
+{
+    color:white;
+    text-decoration:none; /*usuwa te podkreslenia z odnosnikow */
+}
+h1.Centrum
+{
+    font-size:22px;
+    color:rgb(181, 227, 212);
+    text-align:center;
+    text-transform:lowercase;  /*zamienia litery na male*/
+    letter-spacing: 3px; /*rozstrzelenie liter*/
+    
+}
+p.tresc
+{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    width:500px;
+    letter-spacing:1px;
+    font-size:21px;
+    
+}
+/*                                                                                        KONTAKT                                                                        */
+h1.Logo2
+{
+    margin-top:150px;
+  
+    font-size:44px;
+    color:rgb(181, 227, 212);
+    text-align:center;
+    text-transform:uppercase;  /*zamienia litery na duze*/
+    letter-spacing: 3px; /*rozstrzelenie liter*/
+}
+ul.info
+{
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    text-align:center;
+    margin-right:40px;
+   
+}
+.stopka
+{
+    margin-top:190px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    padding:20px;
+    margin-right:180px;
+    background-color:rgb(17, 29, 33);
+    width:100%;
+    color:aliceblue;
+}
+ul a
+{
+    color:white;
+    text-decoration:none; /*usuwa te podkreslenia z odnosnikow */
+    text-align:center;
+}
+li
+{
+    list-style-type: none;
+    text-align:center;
+}
+
+
