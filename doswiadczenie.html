@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>projekt</title>
+
+    <meta name="description" content="Osak Dawid-Projekt">
+    <meta name="author" content="Osak Dawid">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="stylesheet" href="style2.css" type="text/css"/>
+</head>
+
+<body>
+  
+<header>
+    
+
+    <nav>
+     <ul class="Menu">
+        <li><a href="index.html">Strona-głowna</a></li>
+        <li><a href="doswiadczenie.html">Doswiadczenie</a></li>
+        <li><a href="zainteresowania.html">zaintersowania</a></li>
+        <li><a href="wiedza.html">narzedzia i zrodla</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+     </ul>
+    </nav>
+
+    <h1 class="Logo">Doświadczenie</h1>
+
+</header>
+
+<img src="img/code2.png" alt="język C">
+
+<main>
+    <article>
+  
+      <section>
+       <header>
+          <pre>
+            #include <stdio.h>
+            
+            int main() {
+                class Student constructor(idx:Int, firstName:String, lastName:String, mark: Double){
+                    private var idx= idx.toInt()
+                    private var firstname= firstName
+                   private var lastname= lastName
+                   private var mark=mark.toDouble()
+                
+                    fun getMark(): Double{
+                        return mark
+                    }
+                    fun getName():String{
+                        return firstname
+                    }
+                
+                }
+                class MenageStudents constructor(val students:MutableList<Student>){
+                fun avg(): Double{
+                    var count=0.0
+                    var ilosc=0
+                    ilosc=students.size
+                
+                    for(i in students){
+                        count+=i.getMark()
+                    }
+                    return count/ilosc
+                }
+                
+                    fun failed(): MutableList<String>{
+                        var listF= mutableListOf<String>()
+                            for(i in students){
+                                if(i.getMark()==2.0)
+                                listF.add(i.getName())
+                            }
+                       return listF
+                    }
+                
+                    fun add(Student:Student){
+                      students.add(Student)
+                    }
+                
+                }
+                
+                
+                fun main() {
+                    var Daniel=Student(36400,"Daniel","Chmura",4.5)
+                    var Dawid=Student(36401,"Dawid","Osak",2.0)
+                    var Karol=Student(36402,"Karol","Wojcik",2.0)
+                    var Kamil=Student(36403,"Kamil","Szczebak",3.1)
+                    var Jakub=Student(36404,"Jakub","Szczebak",3.2)
+                    var Bartek=Student(36405,"Bartek","Elo",5.0)
+                
+                    var Students= mutableListOf<Student>()
+                    Students.add(Daniel)
+                    Students.add(Dawid)
+                    Students.add(Karol)
+                    Students.add(Kamil)
+                
+                    var ms = MenageStudents(Students)
+                
+                    println(ms.avg())
+                    println(ms.failed())
+                
+                    var dodano = ms.add(Jakub)
+                
+                    println(Students[Students.lastIndex].getName())
+                
+                }
+            }
+            </pre>
+       </header>
+  
+  
+      </section>
+  
+    </article>
+    
+</main>
+
+
+
+
+
+
+
+<footer>
+    <div class="stopka">
+      <strong>Wszelkie prawa zastrzeżone &copy; 2023 Dziękuje za wizytę!</strong>
+    </div>
+  </footer>
+  </body>
+  </html>
